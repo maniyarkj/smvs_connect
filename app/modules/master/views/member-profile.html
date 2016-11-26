@@ -31,32 +31,38 @@
 	<ul class="tabs">
 		<li class="active">
 			<a href="#fwv-1" data-toggle="tab">
-				Personal Info
+				Personal Details
 				<span>1</span>
 			</a>
 		</li>
 		<li>
 			<a href="#fwv-2" data-toggle="tab">
-				Address
+				Business Details
 				<span>2</span>
 			</a>
 		</li>
 		<li>
 			<a href="#fwv-3" data-toggle="tab">
-				Contact Info
+				Contact Details
 				<span>3</span>
 			</a>
 		</li>
 		<li>
 			<a href="#fwv-4" data-toggle="tab">
-				Personal Info
+				Miscellaneous
 				<span>4</span>
 			</a>
 		</li>
 		<li>
 			<a href="#fwv-5" data-toggle="tab">
-				Register
+				Satsang
 				<span>5</span>
+			</a>
+		</li>
+		<li>
+			<a href="#fwv-6" data-toggle="tab">
+				Family
+				<span>6</span>
 			</a>
 		</li>
 	</ul>
@@ -68,6 +74,10 @@
 	<div class="tab-content no-margin">
 		<!-- Tabs Content -->
 		<div class="tab-pane with-bg active" id="fwv-1">
+			<strong>Personal Info</strong>
+			<br />
+			<br />
+
 			<div class="row">
 				<div class="col-md-4">
 					<div class="form-group">
@@ -94,11 +104,11 @@
 						<label class="control-label" for="birthdate">Gender</label>
 						<div class="form-control">
 							<label class="radio-inline">
-								<input type="radio" name="radio-2" checked>
+								<input type="radio" name="rdo_gender" checked>
 								Male
 							</label>
 							<label class="radio-inline">
-								<input type="radio" name="radio-2">
+								<input type="radio" name="rdo_gender">
 								Female
 							</label>
 						</div>
@@ -111,11 +121,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="tab-pane with-bg" id="fwv-2">
+			<div class="form-group-separator"></div>
+			<strong>Residencial Address</strong>
+			<br />
+			<br />
 			<div class="row">
-
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label">Select Country</label>
@@ -319,7 +330,365 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="flat_no">House/Flat no./P.O.Box</label>
+						<label class="control-label" for="flat_no">House/Flat No./P.O.Box</label>
+						<input class="form-control" name="flat_no" id="flat_no" data-validate="required" placeholder="Enter your Flat/House/P.O.Box number" />
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label class="control-label" for="apartment_society_street_name">Apartment Name / Society Name / Street Name </label>
+						<input class="form-control" name="apartment_society_street_name" id="apartment_society_street_name" placeholder="Enter Apartment / Society / Street name" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label class="control-label" for="area_landmark">Area/Landmark</label>
+						<input class="form-control" name="area_landmark" id="area_landmark" placeholder="Area / Landmark" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="form-group">
+						<label class="control-label" for="extra_address">(Optional) Address 2</label>
+						<input class="form-control" name="extra_address" id="extra_address" placeholder="(Optional) Secondary Address" />
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="zip">Zip/Pin Code</label>
+						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" data-validate="required" placeholder="Zip Code" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane with-bg" id="fwv-2">
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="birthdate">Occupation</label>
+						<div class="form-control">
+							<label class="radio-inline">
+								<input type="radio" name="rdo_occupation" checked>
+								Business
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="rdo_occupation">
+								Job
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group-separator"></div>
+			<strong>Business Detail</strong>
+			<br />
+			<br />
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="firm_name">Firm Name</label>
+						<input class="form-control" name="firm_name" id="firm_name" data-validate="require" placeholder="Firm Name" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="business_type">Business Type</label>
+						<input class="form-control" name="business_type" id="business_type" data-validate="require" placeholder="Type of Business" />
+					</div>
+				</div>
+			</div>
+			<div class="form-group-separator"></div>
+			<strong>Job Detail</strong>
+			<br />
+			<br />
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="company_name">Company Name</label>
+						<input class="form-control" name="company_name" id="company_name" data-validate="require" placeholder="Company Name" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="working_as">Working As</label>
+						<input class="form-control" name="working_as" id="working_as" data-validate="require" placeholder="Working As" />
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group-separator"></div>
+			<strong>Other Details</strong>
+			<br />
+			<br />
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="years_experience">Total Years of Experience</label>
+						<select name="test" class="selectboxit">
+								<option value="1">1 Years</option>
+								<option value="2">2 Years</option>
+								<option value="3">3 Years</option>
+								<option value="4">4 Years</option>
+								<option value="5">5 Years</option>
+								<option value="6">6 Years</option>
+								<option value="7">7 Years</option>
+								<option value="8">8 Years</option>
+								<option value="9">9 Years</option>
+								<option value="10">10 Years</option>
+								<option value="11">11 Years</option>
+								<option value="12">12 Years</option>
+								<option value="13">13 Years</option>
+								<option value="14">14 Years</option>
+								<option value="15">15 Years</option>
+								<option value="16">16 Years</option>
+								<option value="17">17 Years</option>
+								<option value="18">18 Years</option>
+								<option value="19">19 Years</option>
+								<option value="20">20 Years</option>
+								<option value="21">21 Years</option>
+								<option value="22">22 Years</option>
+								<option value="23">23 Years</option>
+								<option value="24">24 Years</option>
+								<option value="25">25 Years</option>
+								<option value="26">26 Years</option>
+								<option value="27">27 Years</option>
+								<option value="28">28 Years</option>
+								<option value="29">29 Years</option>
+								<option value="30">30 Years</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="current_designation">Current Designation</label>
+						<input class="form-control" name="current_designation" id="current_designation" data-validate="require" placeholder="Current Designation" />
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group-separator"></div>
+			<strong>Business/Job Address</strong>
+			<br />
+			<br />
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label">Select Country</label>
+
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								$("#s2example-1").select2({
+									placeholder: 'Select your country...',
+									allowClear: true
+								}).on('select2-open', function()
+								{
+									// Adding Custom Scrollbar
+									$(this).data('select2').results.addClass('overflow-hidden').perfectScrollbar();
+								});
+
+							});
+						</script>
+
+						<select class="form-control" id="s2example-1">
+							<option></option>
+							<optgroup label="North America">
+								<option>Alabama</option>
+								<option>Alaska</option>
+								<option>Arizona</option>
+								<option>Arkansas</option>
+								<option>California</option>
+								<option>Colorado</option>
+								<option>Connecticut</option>
+								<option>Delaware</option>
+								<option>Florida</option>
+								<option>Georgia</option>
+								<option>Hawaii</option>
+								<option>Idaho</option>
+								<option>Illinois</option>
+								<option>Indiana</option>
+								<option>Iowa</option>
+								<option>Kansas</option>
+								<option>Kentucky[C]</option>
+								<option>Louisiana</option>
+								<option>Maine</option>
+								<option>Maryland</option>
+								<option>Massachusetts[D]</option>
+								<option>Michigan</option>
+								<option>Minnesota</option>
+								<option>Mississippi</option>
+								<option>Missouri</option>
+								<option>Montana</option>
+								<option>Nebraska</option>
+								<option>Nevada</option>
+								<option>New Hampshire</option>
+								<option>New Jersey</option>
+								<option>New Mexico</option>
+								<option>New York</option>
+								<option>North Carolina</option>
+								<option>North Dakota</option>
+								<option>Ohio</option>
+								<option>Oklahoma</option>
+								<option>Oregon</option>
+								<option>Pennsylvania[E]</option>
+								<option>Rhode Island[F]</option>
+								<option>South Carolina</option>
+								<option>South Dakota</option>
+								<option>Tennessee</option>
+								<option>Texas</option>
+								<option>Utah</option>
+								<option>Vermont</option>
+								<option>Virginia[G]</option>
+								<option>Washington</option>
+								<option>West Virginia</option>
+								<option>Wisconsin</option>
+								<option>Wyoming</option>
+							</optgroup>
+							<optgroup label="Europe">
+								<option>Albania</option>
+								<option>Andorra</option>
+								<option>Armenia</option>
+								<option>Austria</option>
+								<option>Azerbaijan</option>
+								<option>Belarus</option>
+								<option>Belgium</option>
+								<option>Bosnia & Herzegovina</option>
+								<option>Bulgaria</option>
+								<option>Croatia</option>
+								<option>Cyprus</option>
+								<option>Czech Republic</option>
+								<option>Denmark</option>
+								<option>Estonia</option>
+								<option>Finland</option>
+								<option>France</option>
+								<option>Georgia</option>
+								<option>Germany</option>
+								<option>Greece</option>
+								<option>Hungary</option>
+								<option>Iceland</option>
+								<option>Ireland</option>
+								<option>Italy</option>
+								<option>Kosovo</option>
+								<option>Latvia</option>
+								<option>Liechtenstein</option>
+								<option>Lithuania</option>
+								<option>Luxembourg</option>
+								<option>Macedonia</option>
+								<option>Malta</option>
+								<option>Moldova</option>
+								<option>Monaco</option>
+								<option>Montenegro</option>
+								<option>The Netherlands</option>
+								<option>Norway</option>
+								<option>Poland</option>
+								<option>Portugal</option>
+								<option>Romania</option>
+								<option>Russia</option>
+								<option>San Marino</option>
+								<option>Serbia</option>
+								<option>Slovakia</option>
+								<option>Slovenia</option>
+								<option>Spain</option>
+								<option>Sweden</option>
+								<option>Switzerland</option>
+								<option>Turkey</option>
+								<option>Ukraine</option>
+								<option>United Kingdom</option>
+								<option>Vatican City (Holy See)</option>
+							</optgroup>
+							<optgroup label="Asia">
+								<option>Afghanistan</option>
+								<option>Bahrain</option>
+								<option>Bangladesh</option>
+								<option>Bhutan</option>
+								<option>Brunei</option>
+								<option>Cambodia</option>
+								<option>China</option>
+								<option>East Timor</option>
+								<option>India</option>
+								<option>Indonesia</option>
+								<option>Iran</option>
+								<option>Iraq</option>
+								<option>Israel</option>
+								<option>Japan</option>
+								<option>Jordan</option>
+								<option>Kazakhstan</option>
+								<option>Korea North</option>
+								<option>Korea South</option>
+								<option>Kuwait</option>
+								<option>Kyrgyzstan</option>
+								<option>Laos</option>
+								<option>Lebanon</option>
+								<option>Malaysia</option>
+								<option>Maldives</option>
+								<option>Mongolia</option>
+								<option>Myanmar (Burma)</option>
+								<option>Nepal</option>
+								<option>Oman</option>
+								<option>Pakistan</option>
+								<option>The Philippines</option>
+								<option>Qatar</option>
+								<option>Russia</option>
+								<option>Saudi Arabia</option>
+								<option>Singapore</option>
+								<option>Sri Lanka</option>
+								<option>Syria</option>
+								<option>Taiwan</option>
+								<option>Tajikistan</option>
+								<option>Thailand</option>
+								<option>Turkey</option>
+								<option>Turkmenistan</option>
+								<option>United Arab Emirates</option>
+								<option>Uzbekistan</option>
+								<option>Vietnam</option>
+								<option>Yemen</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="state">State/Provience/Region/Territory</label>
+
+						<select name="test" class="selectboxit">
+							<optgroup label="United States">
+								<option value="1">Alabama</option>
+								<option value="2">Boston</option>
+								<option value="3">Ohaio</option>
+								<option value="4">New York</option>
+								<option value="5">Washington</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="city">City</label>
+						<input class="form-control" name="city" id="city" data-validate="required" placeholder="Current city" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="flat_no">House/Flat No./P.O.Box</label>
 						<input class="form-control" name="flat_no" id="flat_no" data-validate="required" placeholder="Enter your Flat/House/P.O.Box number" />
 					</div>
 				</div>
@@ -350,265 +719,191 @@
 
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="zip">Zip</label>
-						<input class="form-control" inputmask name="zip" id="zip" data-mask="** *** **" data-validate="required" placeholder="Zip Code" />
+						<label class="control-label" for="zip">Zip/Pin Code</label>
+						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" data-validate="required" placeholder="Zip Code" />
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<div class="tab-pane with-bg" id="fwv-3">
 
-			<strong>Primary School</strong>
-			<br />
-			<br />
-
-
 			<div class="row">
 
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="form-group">
-						<label class="control-label" for="prim_subject">Subject</label>
-						<input class="form-control" name="prim_subject" id="prim_subject" data-validate="require" placeholder="Graduation Degree" />
+						<label class="control-label" for="mobile_number">Mobile#</label>
+						<input class="form-control" name="mobile_number" id="mobile_number" data-validate="require" placeholder="Mobile Number" />
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="form-group">
-						<label class="control-label" for="prim_school">School Name</label>
-						<input class="form-control" name="prim_school" id="prim_school" placeholder="Which school did you attended" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="prim_date_start">Start Date</label>
-						<input class="form-control datepicker" name="prim_date_start" id="prim_date_start" data-start-view="2" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="prim_date_end">End Date</label>
-						<input class="form-control datepicker" name="prim_date_end" id="prim_date_end" data-start-view="2" placeholder="(Optional)" />
+						<label class="control-label" for="whatsapp_number">WhatsApp#</label>
+						<input class="form-control" name="whatsapp_number" id="whatsapp_number" placeholder="WhatsApp Number" />
 					</div>
 				</div>
 
 			</div>
 
-			<br />
-
-			<strong>Secondary School</strong>
-			<br />
-			<br />
-
 			<div class="row">
 
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="second_subject">Subject</label>
-						<input class="form-control" name="second_subject" id="second_subject" data-validate="require" placeholder="High School" />
+						<label class="control-label" for="phone_residence">Phone (R)</label>
+						<input class="form-control" name="phone_residence" id="phone_residence" placeholder="Residencial Phone Number" />
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="row">
+						<div class="form-group">
+							<label class="control-label" for="phone_office">Phone (O)</label>
+							<div class="row">
+								<div class="col-md-8">
+									<input class="form-control" name="phone_office" id="phone_office" placeholder="Phone (Office)" />
+								</div>
+								<div class="col-md-4 no-left-padding">
+										<input class="form-control" name="extension" id="extension" placeholder="Extn" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="second_school">School Name</label>
-						<input class="form-control" name="second_school" id="second_school" placeholder="Which school did you attended" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="second_date_start">Start Date</label>
-						<input class="form-control datepicker" name="second_date_start" id="second_date_start" data-start-view="2" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="second_date_end">End Date</label>
-						<input class="form-control datepicker" name="second_date_end" id="second_date_end" data-start-view="2" placeholder="(Optional)" />
+						<label class="control-label" for="fax">Fax</label>
+						<input class="form-control" name="fax" id="fax" placeholder="Fax" />
 					</div>
 				</div>
 
 			</div>
 
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="email_personal">Personal Email Id</label>
+						<input class="form-control" name="email_personal" id="email_personal" placeholder="Personal Email Address" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="email_business">Business Email Id</label>
+						<input class="form-control" name="email_business" id="email_business" placeholder="Business Email Address" />
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="skype_id">Skype</label>
+						<input class="form-control" name="skype_id" id="skype_id" data-validate="require" placeholder="Skype Id" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="website">Website</label>
+						<input class="form-control" name="website" id="website" placeholder="Personal/Company Website" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="tab-pane with-bg" id="fwv-4">
+
+			<strong>Education Details</strong>
 			<br />
+			<br />
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="qualification">Qualification</label>
+						<select name="qualification" class="selectboxit">
+							<option value="1">Doctorate</option>
+							<option value="2">Post Graduate</option>
+							<option value="3">Graduate</option>
+							<option value="4">Diploma</option>
+							<option value="5">Under Graduate</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="school_name">School/College</label>
+						<input class="form-control" name="school_name" id="school_name" data-validate="require" placeholder="Enter School / College Name" />
+					</div>
+				</div>
+
+			</div>
 
 			<div class="row">
 
 				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label" for="other_qualifications"><strong>Other Qualifications</strong></label>
-						<textarea class="form-control autogrow" name="other_qualifications" id="other_qualifications" placeholder="List one subject per row"></textarea>
+						<label class="control-label">Special Skills</label>
+						<script type="text/javascript">
+							jQuery(document).ready(function($)
+							{
+								$("#s2example-2").select2({
+									placeholder: 'Select multiple skills you have...',
+									allowClear: true
+								}).on('select2-open', function()
+								{
+									// Adding Custom Scrollbar
+									$(this).data('select2').results.addClass('overflow-hidden').perfectScrollbar();
+								});
+
+							});
+						</script>
+
+						<select class="form-control" id="s2example-2" multiple>
+							<option></option>
+							<optgroup label="Computer Programming">
+								<option>Java Development</option>
+								<option>.Net Development</option>
+								<option>PHP Development</option>
+								<option>Android Development</option>
+								<option>Front End Development</option>
+							</optgroup>
+							<optgroup label="Computer Designing">
+								<option>Coerldraw</option>
+								<option>Photoshop</option>
+								<option>PageMaker</option>
+							</optgroup>
+							<optgroup label="Computer Other">
+								<option>Networking</option>
+								<option>Microsoft Office</option>
+							</optgroup>
+							<optgroup label="Handycraft / Decoration">
+								<option>Painting</option>
+								<option>Quilling Papers</option>
+							</optgroup>
+							<optgroup label="Others">
+								<option>Driving</option>
+								<option>Accounting</option>
+								<option>Training</option>
+							</optgroup>
+						</select>
+
 					</div>
-				</div>
 
-			</div>
-
-		</div>
-
-		<div class="tab-pane with-bg" id="fwv-4">
-
-			<strong>Current &amp; Past Jobs</strong>
-			<br />
-			<br />
-
-			<div class="row">
-
-				<div class="col-md-1">
-					<label class="control-label">&nbsp;</label>
-					<p class="text-right">
-						<span class="label label-info">1</span>
-					</p>
-				</div>
-
-				<div class="col-md-3">
 					<div class="form-group">
-						<label class="control-label" for="job_position_1">Company Name</label>
-						<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current job" />
+						<label class="control-label" for="about">Write Something About Your Skills</label>
+						<textarea class="form-control autogrow" name="about_skills" id="about_skills" data-validate="minlength[10]" rows="5" placeholder="Add your multiple skills with experience"></textarea>
 					</div>
 				</div>
-
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="job_position_1">Job Position</label>
-						<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current position" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_start_date_1">Start Date</label>
-						<input class="form-control datepicker" name="job_position_start_date_1" id="job_position_start_date_1" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_end_date_1">End Date</label>
-						<input class="form-control datepicker" name="job_position_end_date_1" id="job_position_end_date_1" placeholder="(Optional)" />
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-md-1">
-					<label class="control-label">&nbsp;</label>
-					<p class="text-right">
-						<span class="label label-info">2</span>
-					</p>
-				</div>
-
-				<div class="col-md-3">
-					<div class="form-group">
-						<label class="control-label" for="job_position_2">Company Name</label>
-						<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="job_position_2">Job Position</label>
-						<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_start_date_2">Start Date</label>
-						<input class="form-control datepicker" name="job_position_start_date_2" id="job_position_start_date_2" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_end_date_2">End Date</label>
-						<input class="form-control datepicker" name="job_position_end_date_2" id="job_position_end_date_2" placeholder="(Optional)" />
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-md-1">
-					<label class="control-label">&nbsp;</label>
-					<p class="text-right">
-						<span class="label label-info">3</span>
-					</p>
-				</div>
-
-				<div class="col-md-3">
-					<div class="form-group">
-						<label class="control-label" for="job_position_3">Company Name</label>
-						<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="job_position_3">Job Position</label>
-						<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_start_date_3">Start Date</label>
-						<input class="form-control datepicker" name="job_position_start_date_3" id="job_position_start_date_3" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_end_date_3">End Date</label>
-						<input class="form-control datepicker" name="job_position_end_date_3" id="job_position_end_date_3" placeholder="(Optional)" />
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-md-1">
-					<label class="control-label">&nbsp;</label>
-					<p class="text-right">
-						<span class="label label-info">4</span>
-					</p>
-				</div>
-
-				<div class="col-md-3">
-					<div class="form-group">
-						<label class="control-label" for="job_position_4">Company Name</label>
-						<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="job_position_4">Job Position</label>
-						<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_start_date_4">Start Date</label>
-						<input class="form-control datepicker" name="job_position_start_date_4" id="job_position_start_date_4" placeholder="(Optional)" />
-					</div>
-				</div>
-
-				<div class="col-md-2">
-					<div class="form-group">
-						<label class="control-label" for="job_position_end_date_4">End Date</label>
-						<input class="form-control datepicker" name="job_position_end_date_4" id="job_position_end_date_4" placeholder="(Optional)" />
-					</div>
-				</div>
-
 			</div>
 
 		</div>
@@ -685,17 +980,13 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label">Gender</label>
-
 						<br />
-
 					    <input type="checkbox" class="iswitch iswitch-red" checked>
 					</div>
 
 					<div class="form-group">
 						<label class="control-label">Subscribe for Newsletter</label>
-
 						<br />
-
 					    <input type="checkbox" class="iswitch iswitch-purple" checked>
 					</div>
 
@@ -704,9 +995,7 @@
 							Auto-renew Subscription
 							<span class="label label-warning">Yearly</span>
 						</label>
-
 						<br />
-
 					    <input type="checkbox" class="iswitch iswitch-secondary" checked>
 					</div>
 				</div>

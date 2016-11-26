@@ -121,3 +121,11 @@ Tree View CSS
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.no-right-padding {
+  padding-right: 0 !important;
+}
+
+.no-left-padding {
+  padding-left: 0 !important;
+}
