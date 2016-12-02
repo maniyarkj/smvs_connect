@@ -55,13 +55,13 @@
 		</li>
 		<li>
 			<a href="#fwv-5" data-toggle="tab">
-				Satsang
+				Family Details
 				<span>5</span>
 			</a>
 		</li>
 		<li>
 			<a href="#fwv-6" data-toggle="tab">
-				Family
+				Satsang Details
 				<span>6</span>
 			</a>
 		</li>
@@ -79,6 +79,27 @@
 			<br />
 
 			<div class="row">
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="title">Title</label>
+						<select name="test" class="selectboxit">
+							<optgroup label="Select Title">
+								<option value="1">Mr.</option>
+								<option value="2">Mrs.</option>
+								<option value="3">Ms.</option>
+								<option value="4">Dr.</option>
+								<option value="5">Honorable.</option>
+								<option value="6">Prof.</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="first_name">First Name</label>
@@ -88,16 +109,18 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="middle_name">Middle Name</label>
-						<input class="form-control" name="middle_name" id="middle_name" data-validate="required" placeholder="Your Middle name" />
+						<input class="form-control" name="middle_name" id="middle_name" placeholder="Your Middle name" />
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="last_name">Last Name</label>
-						<input class="form-control" name="last_name" id="last_name" data-validate="required" placeholder="Your Last name" />
+						<input class="form-control" name="last_name" id="last_name" placeholder="Your Last name" />
 					</div>
 				</div>
+
 			</div>
+
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
@@ -117,7 +140,7 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label" for="birthdate">Date of Birth</label>
-						<input class="form-control" inputmask name="birthdate" id="birthdate" data-validate="required" data-mask="date" placeholder="Pre-formatted birth date" />
+						<input class="form-control" inputmask name="birthdate" id="birthdate" data-mask="date" placeholder="Pre-formatted birth date" />
 					</div>
 				</div>
 			</div>
@@ -321,8 +344,51 @@
 
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="city">City</label>
-						<input class="form-control" name="city" id="city" data-validate="required" placeholder="Current city" />
+						<label class="control-label" for="disctrict">District</label>
+						<input class="form-control" name="disctrict" id="disctrict" placeholder="Current disctrict" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="state">Taluka</label>
+
+						<select name="test" class="selectboxit">
+							<optgroup label="United States">
+								<option value="1">Alabama</option>
+								<option value="2">Boston</option>
+								<option value="3">Ohaio</option>
+								<option value="4">New York</option>
+								<option value="5">Washington</option>
+							</optgroup>
+						</select>
+
+
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="state">City/Villege</label>
+
+						<select name="test" class="selectboxit">
+							<optgroup label="United States">
+								<option value="1">Alabama</option>
+								<option value="2">Boston</option>
+								<option value="3">Ohaio</option>
+								<option value="4">New York</option>
+								<option value="5">Washington</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="zip">Zip/Pin Code</label>
+						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" placeholder="Zip Code" />
 					</div>
 				</div>
 			</div>
@@ -331,7 +397,7 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="flat_no">House/Flat No./P.O.Box</label>
-						<input class="form-control" name="flat_no" id="flat_no" data-validate="required" placeholder="Enter your Flat/House/P.O.Box number" />
+						<input class="form-control" name="flat_no" id="flat_no" placeholder="Enter your Flat/House/P.O.Box number" />
 					</div>
 				</div>
 				<div class="col-md-8">
@@ -343,28 +409,191 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-12">
+
+				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label" for="area_landmark">Area/Landmark</label>
 						<input class="form-control" name="area_landmark" id="area_landmark" placeholder="Area / Landmark" />
 					</div>
 				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="extra_address">Address 2</label>
+						<input class="form-control" name="extra_address" id="extra_address" placeholder="(Optional) Secondary Address" />
+					</div>
+				</div>
+
+			</div>
+
+			<div class="form-group-separator"></div>
+			<strong>Other Details</strong>
+			<br />
+			<br />
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="relation">Relation</label>
+						<select name="relation" class="selectboxit">
+							<optgroup label="Relation">
+								<option value="1">Self</option>
+								<option value="2">Husband</option>
+								<option value="3">Wife</option>
+								<option value="4">Son</option>
+								<option value="5">Daughter</option>
+								<option value="6">Father</option>
+								<option value="7">Mother</option>
+								<option value="8">Brother</option>
+								<option value="9">Sister</option>
+								<option value="10">Grand Father</option>
+								<option value="11">Grand Monther</option>
+								<option value="12">Grand Son</option>
+								<option value="13">Grand Daughter</option>
+								<option value="14">Father in Law</option>
+								<option value="15">Mother in Law</option>
+								<option value="16">Brother in Law</option>
+								<option value="17">Sister in Law</option>
+								<option value="18">Uncle</option>
+								<option value="19">Aunty</option>
+								<option value="20">Nephew</option>
+								<option value="21">Niece</option>
+								<option value="22">Brother's Wife</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="reference">Reference</label>
+						<input class="form-control" name="reference" id="reference" placeholder="Reference person" />
+					</div>
+				</div>
+
 			</div>
 
 			<div class="row">
-				<div class="col-md-8">
+
+				<div class="col-md-6">
 					<div class="form-group">
-						<label class="control-label" for="extra_address">(Optional) Address 2</label>
-						<input class="form-control" name="extra_address" id="extra_address" placeholder="(Optional) Secondary Address" />
+						<label class="control-label" for="relation">Head Type</label>
+						<select name="head-type" class="selectboxit">
+							<optgroup label="Head Type">
+								<option value="1">A</option>
+								<option value="2">B</option>
+								<option value="3">C</option>
+								<option value="4">D</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="reference">Blood Group</label>
+						<select name="blood-group" class="selectboxit">
+							<optgroup label="Select Blood Group">
+								<option value="1">A+</option>
+								<option value="2">A-</option>
+								<option value="3">AB+</option>
+								<option value="4">AB-</option>
+								<option value="5">B+</option>
+								<option value="6">B-</option>
+								<option value="7">O+</option>
+								<option value="8">O-</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="form-group-separator"></div>
+			<strong>Details in Gujarati</strong>
+			<br />
+			<br />
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="first_name_gujarati">નામ</label>
+						<input class="form-control" name="first_name_gujarati" id="first_name_gujarati" placeholder="Your First name" />
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="middle_name_gujarati">પિતા/પતિનું નામ</label>
+						<input class="form-control" name="middle_name_gujarati" id="middle_name_gujarati" placeholder="Your Middle name" />
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="last_name_gujarati">અટક</label>
+						<input class="form-control" name="last_name_gujarati" id="last_name_gujarati" placeholder="Your Last name" />
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="disctrict_gujarati">જીલ્લાનું નામ</label>
+						<input class="form-control" name="disctrict_gujarati" id="disctrict_gujarati" placeholder="Current disctrict" />
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="taluka_gujarati">તાલુકાનું નામ</label>
+						<input class="form-control" name="taluka_gujarati" id="taluka_gujarati" placeholder="Current taluka" />
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="form-group">
-						<label class="control-label" for="zip">Zip/Pin Code</label>
-						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" data-validate="required" placeholder="Zip Code" />
+						<label class="control-label" for="city_villege_gujarati">શહેર/ગામડાનું નામ</label>
+
+						<input class="form-control" name="city_villege_gujarati" id="city_villege_gujarati" placeholder="Current city_villege" />
 					</div>
 				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="control-label" for="flat_no_gujarati">ઘર નં./ફ્લેટ નં./પી.ઓ.બોક્ષ નં.</label>
+						<input class="form-control" name="flat_no_gujarati" id="flat_no_gujarati" placeholder="Enter your Flat/House/P.O.Box number" />
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label class="control-label" for="apartment_society_street_name_gujarati">સોસાયટીનું નામ / એપાર્ટમેન્ટનું નામ / શેરીનું નામ (સરનામું ૧)</label>
+						<input class="form-control" name="apartment_society_street_name_gujarati" id="apartment_society_street_name_gujarati" placeholder="Enter Apartment / Society / Street name" />
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="area_landmark_gujarati">એરિયાનું નામ (સરનામું ૨)</label>
+						<input class="form-control" name="area_landmark_gujarati" id="area_landmark_gujarati" placeholder="Area / Landmark" />
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label class="control-label" for="extra_address_gujarati">સરનામું ૩</label>
+						<input class="form-control" name="extra_address_gujarati" id="extra_address_gujarati" placeholder="(Optional) Secondary Address" />
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -407,6 +636,19 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+
+				<div class="col-md-12">
+					<div class="form-group">
+						<label class="control-label" for="desc_business">Description of Business</label>
+						<textarea class="form-control autogrow" name="desc_business" id="desc_business" data-validate="minlength[10]" rows="5" placeholder="Add some details about your business"></textarea>
+					</div>
+				</div>
+
+			</div>
+
+
 			<div class="form-group-separator"></div>
 			<strong>Job Detail</strong>
 			<br />
@@ -416,69 +658,29 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label" for="company_name">Company Name</label>
-						<input class="form-control" name="company_name" id="company_name" data-validate="require" placeholder="Company Name" />
+						<input class="form-control" name="company_name" id="company_name" placeholder="Company Name" />
 					</div>
 				</div>
 
 				<div class="col-md-6">
 					<div class="form-group">
 						<label class="control-label" for="working_as">Working As</label>
-						<input class="form-control" name="working_as" id="working_as" data-validate="require" placeholder="Working As" />
+						<input class="form-control" name="working_as" id="working_as" placeholder="Working As" />
 					</div>
 				</div>
 			</div>
 
-			<div class="form-group-separator"></div>
-			<strong>Other Details</strong>
-			<br />
-			<br />
 			<div class="row">
-				<div class="col-md-6">
+
+				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label" for="years_experience">Total Years of Experience</label>
-						<select name="test" class="selectboxit">
-								<option value="1">1 Years</option>
-								<option value="2">2 Years</option>
-								<option value="3">3 Years</option>
-								<option value="4">4 Years</option>
-								<option value="5">5 Years</option>
-								<option value="6">6 Years</option>
-								<option value="7">7 Years</option>
-								<option value="8">8 Years</option>
-								<option value="9">9 Years</option>
-								<option value="10">10 Years</option>
-								<option value="11">11 Years</option>
-								<option value="12">12 Years</option>
-								<option value="13">13 Years</option>
-								<option value="14">14 Years</option>
-								<option value="15">15 Years</option>
-								<option value="16">16 Years</option>
-								<option value="17">17 Years</option>
-								<option value="18">18 Years</option>
-								<option value="19">19 Years</option>
-								<option value="20">20 Years</option>
-								<option value="21">21 Years</option>
-								<option value="22">22 Years</option>
-								<option value="23">23 Years</option>
-								<option value="24">24 Years</option>
-								<option value="25">25 Years</option>
-								<option value="26">26 Years</option>
-								<option value="27">27 Years</option>
-								<option value="28">28 Years</option>
-								<option value="29">29 Years</option>
-								<option value="30">30 Years</option>
-							</optgroup>
-						</select>
+						<label class="control-label" for="desc_job">Description of Job</label>
+						<textarea class="form-control autogrow" name="about_skills" id="about_skills" data-validate="minlength[10]" rows="5" placeholder="Add some details about your Job"></textarea>
 					</div>
 				</div>
 
-				<div class="col-md-6">
-					<div class="form-group">
-						<label class="control-label" for="current_designation">Current Designation</label>
-						<input class="form-control" name="current_designation" id="current_designation" data-validate="require" placeholder="Current Designation" />
-					</div>
-				</div>
 			</div>
+
 
 			<div class="form-group-separator"></div>
 			<strong>Business/Job Address</strong>
@@ -680,7 +882,7 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="city">City</label>
-						<input class="form-control" name="city" id="city" data-validate="required" placeholder="Current city" />
+						<input class="form-control" name="city" id="city" placeholder="Current city" />
 					</div>
 				</div>
 			</div>
@@ -689,7 +891,7 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="flat_no">House/Flat No./P.O.Box</label>
-						<input class="form-control" name="flat_no" id="flat_no" data-validate="required" placeholder="Enter your Flat/House/P.O.Box number" />
+						<input class="form-control" name="flat_no" id="flat_no" placeholder="Enter your Flat/House/P.O.Box number" />
 					</div>
 				</div>
 				<div class="col-md-8">
@@ -712,7 +914,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="form-group">
-						<label class="control-label" for="extra_address">(Optional) Address 2</label>
+						<label class="control-label" for="extra_address">Address 2</label>
 						<input class="form-control" name="extra_address" id="extra_address" placeholder="(Optional) Secondary Address" />
 					</div>
 				</div>
@@ -720,7 +922,7 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label class="control-label" for="zip">Zip/Pin Code</label>
-						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" data-validate="required" placeholder="Zip Code" />
+						<input class="form-control" inputmask name="zip" id="zip" data-mask="*** ***" placeholder="Zip Code" />
 					</div>
 				</div>
 			</div>
@@ -731,51 +933,37 @@
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label" for="mobile_number">Mobile#</label>
-						<input class="form-control" name="mobile_number" id="mobile_number" data-validate="require" placeholder="Mobile Number" />
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="form-group">
-						<label class="control-label" for="whatsapp_number">WhatsApp#</label>
-						<input class="form-control" name="whatsapp_number" id="whatsapp_number" placeholder="WhatsApp Number" />
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="phone_residence">Phone (R)</label>
-						<input class="form-control" name="phone_residence" id="phone_residence" placeholder="Residencial Phone Number" />
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="row">
-						<div class="form-group">
-							<label class="control-label" for="phone_office">Phone (O)</label>
+						<label class="control-label" for="phones">Phone</label>
+						<fieldset data-ng-repeat="choice in choices">
 							<div class="row">
-								<div class="col-md-8">
-									<input class="form-control" name="phone_office" id="phone_office" placeholder="Phone (Office)" />
+								<div class="col-md-3">
+									<div class="form-group">
+							      <select name="phones" class="form-control">
+							         <option>Mobile</option>
+											 <option>Whatsapp</option>
+							         <option>Work</option>
+							         <option>Home</option>
+											 <option>Main</option>
+											 <option>Work Fax</option>
+							         <option>Home Fax</option>
+											 <option>Other</option>
+							      </select>
+									</div>
 								</div>
-								<div class="col-md-4 no-left-padding">
-										<input class="form-control" name="extension" id="extension" placeholder="Extn" />
+								<div class="col-md-8">
+									<div class="form-group">
+							      <input type="text" ng-model="choice.name" name="" class="form-control" placeholder="Enter mobile number">
+									</div>
+								</div>
+								<div class="col-md-1">
+									<a class="pull-right btn btn-xs" ng-click="removeChoice()"><span class="form-control glyphicon glyphicon-remove"></span></a>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-4">
-					<div class="form-group">
-						<label class="control-label" for="fax">Fax</label>
-						<input class="form-control" name="fax" id="fax" placeholder="Fax" />
+				   	</fieldset>
+				   	<button class="btn btn-primary" ng-click="addNewChoice()">Add More Phone</button>
 					</div>
 				</div>
 
@@ -783,20 +971,34 @@
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label" for="email_personal">Personal Email Id</label>
-						<input class="form-control" name="email_personal" id="email_personal" placeholder="Personal Email Address" />
+						<label class="control-label" for="phones">Email</label>
+						<fieldset data-ng-repeat="choice in choices">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+							      <select name="phones" class="form-control">
+							         <option>Home</option>
+											 <option>Work</option>
+							         <option>Other</option>
+							      </select>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="form-group">
+							      <input type="text" ng-model="choice.name" name="" class="form-control" placeholder="Enter email">
+									</div>
+								</div>
+								<div class="col-md-1">
+									<a class="pull-right btn btn-xs" ng-click="removeChoice()"><span class="form-control glyphicon glyphicon-remove"></span></a>
+								</div>
+							</div>
+
+				   	</fieldset>
+				   	<button class="btn btn-primary" ng-click="addNewChoice()">Add More Email</button>
 					</div>
 				</div>
-
-				<div class="col-md-6">
-					<div class="form-group">
-						<label class="control-label" for="email_business">Business Email Id</label>
-						<input class="form-control" name="email_business" id="email_business" placeholder="Business Email Address" />
-					</div>
-				</div>
-
 			</div>
 
 			<div class="row">
@@ -820,7 +1022,7 @@
 
 		<div class="tab-pane with-bg" id="fwv-4">
 
-			<strong>Education Details</strong>
+			<strong>Educational Details</strong>
 			<br />
 			<br />
 
@@ -852,7 +1054,7 @@
 
 				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label">Special Skills</label>
+						<label class="control-label">Skills</label>
 						<script type="text/javascript">
 							jQuery(document).ready(function($)
 							{
@@ -904,51 +1106,54 @@
 						<textarea class="form-control autogrow" name="about_skills" id="about_skills" data-validate="minlength[10]" rows="5" placeholder="Add your multiple skills with experience"></textarea>
 					</div>
 				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-12">
+					<div class="form-group">
+						<label class="control-label" for="phones">Special Information</label>
+						<fieldset data-ng-repeat="choice in choices">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+							      <select name="phones" class="form-control">
+							         <option>Home</option>
+											 <option>Work</option>
+							         <option>Other</option>
+							      </select>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="form-group">
+							      <input type="text" ng-model="choice.name" name="" class="form-control" placeholder="Enter Information">
+									</div>
+								</div>
+								<div class="col-md-1">
+									<a class="pull-right btn btn-xs" ng-click="removeChoice()"><span class="form-control glyphicon glyphicon-remove"></span></a>
+								</div>
+							</div>
+
+				   	</fieldset>
+				   	<button class="btn btn-primary" ng-click="addNewChoice()">Add More Special Information</button>
+					</div>
+				</div>
 			</div>
 
 		</div>
 
 		<div class="tab-pane with-bg" id="fwv-5">
 
-			<div class="form-group">
-				<label class="control-label">Choose Username</label>
-
-				<div class="input-group">
-					<div class="input-group-addon">
-						<i class="linecons-user"></i>
-					</div>
-
-					<input type="text" class="form-control" name="username" id="username" data-validate="required,minlength[5]" data-message-minlength="Username must have minimum of 5 chars." placeholder="Could also be your email" />
-				</div>
-			</div>
+			<strong>Family Members</strong>
+			<br />
+			<br />
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<div class="form-group">
-						<label class="control-label">Choose Password</label>
-
-						<div class="input-group">
-							<div class="input-group-addon">
-								<i class="linecons-lock"></i>
-							</div>
-
-							<input type="password" class="form-control" name="password" id="password" data-validate="required" placeholder="Enter strong password" />
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="form-group">
-						<label class="control-label">Repeat Password</label>
-
-						<div class="input-group">
-							<div class="input-group-addon">
-								<i class="linecons-lock"></i>
-							</div>
-
-							<input type="password" class="form-control" name="password" id="password" data-validate="required,equalTo[#password]" data-message-equal-to="Passwords doesn't match." placeholder="Confirm password" />
-						</div>
+						No Family Members at a moment...
 					</div>
 				</div>
 
@@ -956,63 +1161,197 @@
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<div class="form-group">
-						<label class="control-label">Include Services</label>
-
-						<select multiple="multiple" name="my-select[]" class="form-control multi-select">
-							<option value="1">Web Builder</option>
-							<option value="2" selected>Server Side Scripting</option>
-							<option value="3">Secure Connection</option>
-							<option value="4" selected>Database Access</option>
-							<option value="5" selected>Email</option>
-							<option value="6">eCommerce</option>
-							<option value="7">Royalty Free Photos</option>
-							<option value="8">WordPress Installation</option>
-							<option value="9">Magento Installation</option>
-							<option value="10">Reseller Account</option>
-							<option value="11">WHM Client</option>
-							<option value="12">Nginx</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="form-group">
-						<label class="control-label">Gender</label>
-						<br />
-					    <input type="checkbox" class="iswitch iswitch-red" checked>
-					</div>
-
-					<div class="form-group">
-						<label class="control-label">Subscribe for Newsletter</label>
-						<br />
-					    <input type="checkbox" class="iswitch iswitch-purple" checked>
-					</div>
-
-					<div class="form-group">
-						<label class="control-label">
-							Auto-renew Subscription
-							<span class="label label-warning">Yearly</span>
-						</label>
-						<br />
-					    <input type="checkbox" class="iswitch iswitch-secondary" checked>
+						<button class="btn btn-primary" ng-click="addNewChoice()">Add Family Member</button>
 					</div>
 				</div>
 
 			</div>
 
-			<div class="form-group">
-				<input type="checkbox" class="cbr" name="chk-rules" id="chk-rules" data-validate="required" data-message-message="You must accept rules in order to complete this registration.">
-				<label for="chk-rules">By registering I accept terms and conditions.</label>
-			</div>
 
-			<div class="form-group">
-				<button type="submit" class="btn btn-primary">Finish Registration</button>
-			</div>
 
 		</div>
 
+		<div class="tab-pane with-bg" id="fwv-6">
+
+			<strong>Events</strong>
+			<br />
+			<br />
+
+			<div class="row">
+				<div class="col-sm-3">
+
+					<div class="xe-widget xe-counter" data-count=".num" data-from="0" data-to="99.9" data-suffix="%" data-duration="2">
+						<div class="xe-icon">
+							<i class="linecons-cloud"></i>
+						</div>
+						<div class="xe-label">
+							<strong class="num">0.0%</strong>
+							<span>Satsang Grades</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="xe-widget xe-counter xe-counter-blue" data-count=".num" data-from="1" data-to="117" data-suffix="k" data-duration="3" data-easing="false">
+						<div class="xe-icon">
+							<i class="linecons-user"></i>
+						</div>
+						<div class="xe-label">
+							<strong class="num">1k</strong>
+							<span>Padharamni</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="xe-widget xe-counter xe-counter-info" data-count=".num" data-from="1000" data-to="2470" data-duration="4" data-easing="true">
+						<div class="xe-icon">
+							<i class="linecons-camera"></i>
+						</div>
+						<div class="xe-label">
+							<strong class="num">1000</strong>
+							<span>Add Photos</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="xe-widget xe-counter xe-counter-red" xe-counter data-count=".num" data-from="0" data-to="57" data-prefix="-," data-suffix="%" data-duration="5" data-easing="true" data-delay="1">
+						<div class="xe-icon">
+							<i class="linecons-lightbulb"></i>
+						</div>
+						<div class="xe-label">
+							<strong class="num">-,0%</strong>
+							<span>Karyakar</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- <div class="row">
+
+				<div class="col-sm-4">
+
+					<div class="xe-widget xe-counter-block  xe-counter-block-blue">
+						<div class="xe-upper">
+
+							<div class="xe-icon">
+								<i class="linecons-cloud"></i>
+							</div>
+							<div class="xe-label">
+								<strong class="num">Satsang Grades</strong>
+								<span>Server uptime</span>
+							</div>
+
+						</div>
+						<div class="xe-lower">
+							<div class="border"></div>
+
+							<span>Result</span>
+							<strong>78% Increase</strong>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-4">
+
+					<div class="xe-widget xe-counter-block xe-counter-block-blue">
+						<div class="xe-upper">
+
+							<div class="xe-icon">
+								<i class="linecons-camera"></i>
+							</div>
+							<div class="xe-label">
+								<strong class="num">Add Photos</strong>
+								<span>Photos Taken</span>
+							</div>
+
+						</div>
+						<div class="xe-lower">
+							<div class="border"></div>
+
+							<span>Increase</span>
+							<strong>512 more photos</strong>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-4">
+
+					<div class="xe-widget xe-counter-block xe-counter-block-blue">
+						<div class="xe-upper">
+
+							<div class="xe-icon">
+								<i class="linecons-user"></i>
+							</div>
+							<div class="xe-label">
+								<strong class="num">Padhramni</strong>
+								<span>Daily Visits</span>
+							</div>
+
+						</div>
+						<div class="xe-lower">
+							<div class="border"></div>
+
+							<span>Bounce Rate</span>
+							<strong>51.55%</strong>
+						</div>
+					</div>
+
+				</div>
+			</div> -->
+			<!-- <div class="row">
+				<div class="col-sm-4">
+
+					<div class="xe-widget xe-counter-block xe-counter-block-blue">
+						<div class="xe-upper">
+
+							<div class="xe-icon">
+								<i class="fa-life-ring"></i>
+							</div>
+							<div class="xe-label">
+								<strong class="num">Karyakar</strong>
+								<span>Live Support</span>
+							</div>
+
+						</div>
+						<div class="xe-lower">
+							<div class="border"></div>
+
+							<span>Tickets Opened</span>
+							<strong xe-counter data-count="this" data-from="0" data-to="14215" data-duration="2">0</strong>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div> -->
+
+		</div>
+		<!-- <div class="col-md-4">
+			<button class="btn btn-primary" ng-click="">Add Images</button>
+		</div>
+
+		<div class="col-md-4">
+			<button class="btn btn-primary" ng-click="">Add Satsang Grade</button>
+		</div>
+
+		<div class="col-md-4">
+			<button class="btn btn-primary" ng-click="">Add Padhramni Grade</button>
+		</div> -->
 
 		<!-- Tabs Pager -->
 
